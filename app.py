@@ -3,7 +3,7 @@ import os
 class HelloHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         print("get!")
-        message = "Hello, world 2!"
+        message = "Hello, world 3!"
         self.send_response(200)
         self.send_header("Content-type", "text/plain; charset=utf-8")
         self.end_headers()
