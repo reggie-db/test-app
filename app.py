@@ -2,7 +2,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import os
 class HelloHandler(BaseHTTPRequestHandler):
     def do_GET(self):
-        message = "Hello, world!"
+        message = "Hello, world 2!"
         self.send_response(200)
         self.send_header("Content-type", "text/plain; charset=utf-8")
         self.end_headers()
