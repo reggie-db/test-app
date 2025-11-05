@@ -11,6 +11,7 @@ class HelloHandler(BaseHTTPRequestHandler):
 
 if __name__ == "__main__":
     port = int(os.getenv("DATABRICKS_APP_PORT", "8000"))
+    print(f"Starting on port {port}")
     server = HTTPServer(("0.0.0.0", port), HelloHandler)
     print(f"Serving on port {port}")
     server.serve_forever()
